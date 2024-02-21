@@ -28,13 +28,16 @@ public class VendingMachine{
                     System.out.println("Enter the number of dollar bills you would like to insert.");
                     int userInput2 = scanner.nextInt();
 
-                if(userInput2 > 0 && userInput2 >= prices[userInput]){
+                    if(userInput2 > 0 && userInput2 >= prices[selection]){
 
-                    float change = (float) (userInput2 - prices[selection]);
-                    System.out.println("Here's your change: "+ change);
+                        float change = (float) (userInput2 - prices[selection]);
+                        System.out.println("Here's your change: "+ change);
+    
+                        }  
 
-                    }             
                 }
+
+                
                 else {
                     System.out.println("Error: That number does not correspond with a snack item, please try again.");
                 }
