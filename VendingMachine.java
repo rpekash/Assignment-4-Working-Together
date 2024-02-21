@@ -37,7 +37,6 @@ public class VendingMachine{
 
                 }
 
-                
                 else {
                     System.out.println("Error: That number does not correspond with a snack item, please try again.");
                 }
